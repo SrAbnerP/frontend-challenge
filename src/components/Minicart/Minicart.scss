@@ -1,0 +1,138 @@
+.containerCart {
+  .cartButton {
+    width: 90px;
+    height: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: #e2e2e2;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
+    }
+  }
+
+  .cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 428px;
+    height: 100%;
+    background-color: #0f52ba;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: width 0.5s ease;
+
+    .containerTopCart {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+
+      .topCart {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 36px 22px 0 47px;
+
+        .titleCart {
+          font-size: 27px;
+          line-height: 32.91px;
+          font-weight: 700;
+          color: #fff;
+
+          // max-width: 200px;
+        }
+
+        .buttonClose {
+          width: 38px;
+          height: 38px;
+
+          background-color: #000000;
+          border: none;
+          border-radius: 25px;
+
+          cursor: pointer;
+          transition: background-color 0.5s ease;
+
+          font-size: 24px;
+          line-height: 15px;
+          font-weight: 400;
+          color: #fff;
+
+          &:hover {
+            background-color: #292929;
+          }
+        }
+      }
+
+      .containerItems {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        max-height: 550px;
+        overflow-y: auto;
+
+        padding: 0 57px 0 47px;
+      }
+    }
+
+    .footerCart {
+      .totalCart {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0 63px 42px 47px;
+
+        h1 {
+          font-size: 28px;
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+
+      .buttonBuyCart {
+        width: 100%;
+        height: 98px;
+
+        background-color: #000000;
+        border: none;
+
+        outline: none;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+
+        font-size: 28px;
+        line-height: 15px;
+        font-weight: 700;
+        color: #fff;
+
+        &:hover {
+          background-color: #141414;
+        }
+      }
+    }
+  }
+}

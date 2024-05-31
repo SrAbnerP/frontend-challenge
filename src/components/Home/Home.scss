@@ -1,0 +1,17 @@
+.containerHome {
+  //   height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .containerProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+
+    max-width: 1080px;
+  }
+}

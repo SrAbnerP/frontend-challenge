@@ -1,0 +1,95 @@
+.containerMinicartCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  background-color: #fff;
+  border-radius: 8px;
+
+  padding: 10px 15px 10px 12px;
+
+  img {
+    max-width: 60px;
+  }
+
+  h2 {
+    max-width: 74px;
+
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #2c2c2c;
+  }
+
+  .containerMinicartChange {
+    font-size: 5px;
+    .minicartCardChange {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 55px;
+      //   height: 20px;
+      padding: 2px 4px;
+
+      border: 1px solid #bfbfbf;
+      border-radius: 4px;
+
+      p {
+        font-size: 14px;
+      }
+
+      button {
+        background-color: transparent;
+        cursor: pointer;
+
+        &:first-child {
+          border-right: 1px solid #bfbfbf;
+          border-left: none;
+          border-top: none;
+          border-bottom: none;
+
+          padding-right: 4px;
+        }
+
+        &:last-child {
+          border-left: 1px solid #bfbfbf;
+          border-right: none;
+          border-top: none;
+          border-bottom: none;
+
+          padding-left: 4px;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+  }
+
+  .minicartCardRemove {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #000;
+    border-radius: 25px;
+    border: none;
+
+    outline: none;
+    cursor: pointer;
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
